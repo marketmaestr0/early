@@ -10,7 +10,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Inconsolata:wght@200..900&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 
@@ -34,12 +35,15 @@
               <div class="flex justify-center gap-4 md:gap-6 pt-4 md:pt-6"><a href="https://t.me/JustEarlyCTO"
                   target="_blank" rel="noopener noreferrer" class="bg-[#229ED9] hover:bg-[#1a8ac0] text-white font-display text-lg md:text-xl py-3 md:py-4 px-6 md:px-8 rounded-full 
                                flex items-center justify-center gap-2 transition-colors duration-300
-                               shadow-lg" tabindex="0" style="transform: none;"><span
-                    class="text-xl md:text-2xl">📱</span><span>Telegram</span></a><a href="https://x.com/justearly_cto"
-                  target="_blank" rel="noopener noreferrer" class="bg-black hover:bg-gray-900 text-white font-display text-lg md:text-xl py-3 md:py-4 px-6 md:px-8 rounded-full 
+                               shadow-lg" tabindex="0" style="transform: none;">
+                               <img src="images/icons8-telegram-app-240_WHITE.png" alt="Telegram" alt="Telegram" class="icon" />
+                  <span>Telegram</span></a><a href="https://x.com/justearly_cto" target="_blank"
+                  rel="noopener noreferrer" class="bg-black hover:bg-gray-900 text-white font-display text-lg md:text-xl py-3 md:py-4 px-6 md:px-8 rounded-full 
                                flex items-center justify-center gap-2 transition-colors duration-300
-                               shadow-lg" tabindex="0" style="transform: none;"><span
-                    class="text-xl md:text-2xl">𝕏</span><span>Twitter</span></a></div>
+                               shadow-lg" tabindex="0" style="transform: none;">
+                  <span class="text-xl md:text-2xl">𝕏</span><span>Twitter</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -65,11 +69,12 @@
               <div class="text-center mb-4">
                 <h3 class="text-xl md:text-2xl mb-4">Contract Address</h3>
               </div>
-              <div class="flex justify-center items-center gap-3 copy-wrap" data-copy="ca" role="button" tabindex="0" aria-label="Copy contract address">
+              <div class="flex justify-center items-center gap-3 copy-wrap" data-copy="ca" role="button" tabindex="0"
+                aria-label="Copy contract address">
                 <code class="ca-text">BVvSqvTb9ZVNEkP5UsamR1egAWSGEZiQDU42FS7mmoon</code>
                 <span class="copy-bubble" aria-hidden="true">Copied</span>
               </div>
-              
+
               <p class="text-center mt-4 text-sm md:text-base text-early-blue/70">Copy the contract address to trade
                 on your favorite Solana DEX</p>
             </div>
@@ -141,12 +146,12 @@
           }
         });
       }
-    
+
       function attachCopyHandlers() {
         document.querySelectorAll('[data-copy="ca"]').forEach((wrap) => {
           const codeEl = wrap.querySelector('.ca-text');
           if (!codeEl) return;
-    
+
           const triggerCopy = () => {
             copyTextFrom(codeEl).then(() => {
               wrap.setAttribute('data-copied', 'true');
@@ -158,7 +163,7 @@
               // (Optional) you could show an error bubble/state here
             });
           };
-    
+
           wrap.addEventListener('click', triggerCopy);
           wrap.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
@@ -168,7 +173,7 @@
           });
         });
       }
-    
+
       // Run on DOM ready
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', attachCopyHandlers);
@@ -176,8 +181,8 @@
         attachCopyHandlers();
       }
     })();
-    </script>
-    
+  </script>
+
 </body>
 
 </html>
