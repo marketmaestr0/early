@@ -311,6 +311,27 @@ h3 {
 }
 
 
+ul {
+    list-style: disc;    /* classic solid bullet */
+    padding-left: 1.5rem; /* space so bullets don’t overlap text */
+    font-size: 1.125rem;
+    padding: 1rem 4rem 1rem 4rem;
+  }
+
+  @media (min-width: 768px) {
+    ul {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    ul {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+  }
+
 .icon {
     width: 1.5rem;  /* ≈ 24px */
     height: 1.5rem;
@@ -525,7 +546,7 @@ h3 {
 }
 
 .max-w-lg {
-    max-width: 32rem
+    max-width: 42rem
 }
 
 .grid-cols-1 {
