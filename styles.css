@@ -446,7 +446,8 @@ ul {
     transition-duration: .3s;
     transition-property: transform;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-    will-change: transform
+    will-change: transform;
+    align-content: center;
 }
 
 .card:hover {
